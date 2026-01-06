@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alya Tesisat - Tıkanıklık Açma, Petek Temizleme, Elektrikçi Hizmetleri</title>
+    <meta name="description" content="Esenyurt, Avcılar, Beylikdüzü ve çevresinde acil tesisat, tıkanıklık açma, petek temizleme ve elektrikçi hizmetleri. 7/24 Hizmet. 0532 247 21 59">
+    <meta name="keywords" content="tesisatçı, tıkanıklık açma, petek temizleme, elektrikçi, Esenyurt, Avcılar, Beylikdüzü, acil tesisatçı, su tesisatı, esenyurt tesisatçı">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Alya Tesisat - Profesyonel Tesisat Hizmetleri">
+    <meta property="og:description" content="Esenyurt, Avcılar, Beylikdüzü ve çevresinde 7/24 tesisat, elektrik ve petek temizleme hizmetleri.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/alyatesisatlogo.png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #2563eb;
+            --dark-blue: #1d4ed8;
+            --light-blue: #dbeafe;
+            --accent-blue: #3b82f6;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-600: #4b5563;
+            --gray-800: #1f2937;
+            --black: #111827;
+            --whatsapp-green: #25d366;
+            --whatsapp-dark: #128c7e;
+            --phone-blue: #3b82f6;
+            --gradient-blue: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 25px -5px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 40px -10px rgba(0,0,0,0.15);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --radius-full: 9999px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--gray-800);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--gray-800);
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        h3 {
+            font-size: 1.875rem;
+        }
+        
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--gray-600);
+            font-size: 1.125rem;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .section {
+            padding: 5rem 0;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem 1.5rem;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .logo {
+            height: 3.5rem;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        
+        .logo-text {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            letter-spacing: -0.025em;
+        }
+        
+        .logo-text span {
+            color: var(--dark-blue);
+        }
+        
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 2rem;
+            height: 1.5rem;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 1001;
+        }
+        
+        .menu-toggle span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: var(--dark-blue);
+            border-radius: var(--radius-full);
+            transition: all 0.3s ease;
+        }
+        
+        /* Navigation */
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 2.5rem;
+        }
+        
+        .nav-menu li a {
+            text-decoration: none;
+            color: var(--gray-800);
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+        
+        .nav-menu li a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: var(--primary-blue);
+            border-radius: var(--radius-full);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-menu li a:hover {
+            color: var(--primary-blue);
+        }
+        
+        .nav-menu li a:hover:after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: var(--gradient-blue);
+            color: var(--white);
+            padding: 12rem 0 8rem;
+            margin-top: 5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path d="M500,50L505,55L510,50L515,55L520,50L525,55L530,50L535,55L540,50L545,55L550,50L555,55L560,50L565,55L570,50L575,55L580,50L585,55L590,50L595,55L600,50L605,55L610,50L615,55L620,50L625,55L630,50L635,55L640,50L645,55L650,50L655,55L660,50L665,55L670,50L675,55L680,50L685,55L690,50L695,55L700,50L705,55L710,50L715,55L720,50L725,55L730,50L735,55L740,50L745,55L750,50L755,55L760,50L765,55L770,50L775,55L780,50L785,55L790,50L795,55L800,50L805,55L810,50L815,55L820,50L825,55L830,50L835,55L840,50L845,55L850,50L855,55L860,50L865,55L870,50L875,55L880,50L885,55L890,50L895,55L900,50L905,55L910,50L915,55L920,50L925,55L930,50L935,55L940,50L945,55L950,50L955,55L960,50L965,55L970,50L975,55L980,50L985,55L990,50L995,55L1000,50L1000,100L0,100L0,50Z" fill="rgba(255,255,255,0.1)"/></svg>');
+            background-size: 100% 100px;
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+        
+        .hero h1 {
+            color: var(--white);
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            max-width: 800px;
+        }
+        
+        .hero p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.375rem;
+            max-width: 700px;
+            margin-bottom: 3rem;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 1.125rem 2.5rem;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 1.125rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn-primary {
+            background-color: var(--white);
+            color: var(--primary-blue);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--gray-100);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .btn-whatsapp {
+            background-color: var(--whatsapp-green);
+            color: var(--white);
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: var(--whatsapp-dark);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        /* Services Section */
+        .services {
+            background-color: var(--gray-50);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-title h2 {
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-blue);
+            border-radius: var(--radius-full);
+        }
+        
+        .section-title p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.25rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all 0.4s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .service-image {
+            height: 240px;
+            overflow: hidden;
+        }
+        
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s ease;
+        }
+        
+        .service-card:hover .service-image img {
+            transform: scale(1.1);
+        }
+        
+        .service-content {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .service-content h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin: 1.5rem 0;
+            flex-grow: 1;
+        }
+        
+        .service-features li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .service-features i {
+            color: var(--primary-blue);
+            font-size: 1.125rem;
+        }
+        
+        .service-button {
+            margin-top: auto;
+            align-self: flex-start;
+        }
+        
+        /* Service Area */
+        .service-area {
+            background: linear-gradient(to right, var(--white) 50%, var(--gray-50) 50%);
+        }
+        
+        .area-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .area-content h2 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .area-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .area-item {
+            background-color: var(--white);
+            padding: 0.875rem 1.5rem;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            color: var(--gray-800);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .area-item:hover {
+            border-color: var(--primary-blue);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .area-item.highlight {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+        
+        .area-map {
+            background-color: var(--gray-100);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .map-placeholder {
+            height: 300px;
+            background: linear-gradient(135deg, var(--gray-200) 25%, var(--gray-100) 25%, var(--gray-100) 50%, var(--gray-200) 50%, var(--gray-200) 75%, var(--gray-100) 75%);
+            background-size: 40px 40px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-600);
+            font-weight: 600;
+        }
+        
+        /* Articles Section */
+        .articles {
+            background-color: var(--white);
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .article-card {
+            background-color: var(--white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .article-image {
+            height: 200px;
+            background-color: var(--gray-100);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-600);
+            font-size: 3rem;
+        }
+        
+        .article-content {
+            padding: 2rem;
+        }
+        
+        .article-content h3 {
+            margin-bottom: 1rem;
+            font-size: 1.375rem;
+        }
+        
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            color: var(--gray-600);
+            font-size: 0.875rem;
+        }
+        
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-blue);
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: gap 0.3s ease;
+        }
+        
+        .read-more:hover {
+            gap: 0.75rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: var(--gradient-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 6rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section h2 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            font-size: 2.75rem;
+        }
+        
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-size: 1.25rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--gray-800);
+            color: var(--gray-200);
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-logo {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-about p {
+            color: var(--gray-300);
+        }
+        
+        .footer-links h3, .footer-services h3 {
+            color: var(--white);
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-links ul, .footer-services ul {
+            list-style: none;
+        }
+        
+        .footer-links li, .footer-services li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-links a, .footer-services a {
+            color: var(--gray-300);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover, .footer-services a:hover {
+            color: var(--white);
+        }
+        
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .contact-item i {
+            color: var(--primary-blue);
+            font-size: 1.25rem;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--gray-700);
+            color: var(--gray-400);
+            font-size: 0.875rem;
+        }
+        
+        /* Floating Buttons */
+        .floating-buttons {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .floating-button {
+            width: 3.75rem;
+            height: 3.75rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .floating-button.whatsapp {
+            background-color: var(--whatsapp-green);
+            animation-delay: 0.5s;
+        }
+        
+        .floating-button.phone {
+            background-color: var(--phone-blue);
+        }
+        
+        .floating-button:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        /* Stats Section */
+        .stats {
+            background-color: var(--white);
+            padding: 4rem 0;
+        }
+        
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            background-color: var(--gray-50);
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            background-color: var(--light-blue);
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-text {
+            font-weight: 600;
+            color: var(--gray-800);
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 3rem;
+            }
+            
+            h2 {
+                font-size: 2.25rem;
+            }
+            
+            .hero {
+                padding: 10rem 0 6rem;
+            }
+            
+            .area-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .service-area {
+                background: var(--white);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 1rem 1.25rem;
+            }
+            
+            .menu-toggle {
+                display: flex;
+            }
+            
+            .menu-toggle.active span:nth-child(1) {
+                transform: rotate(45deg) translate(6px, 6px);
+            }
+            
+            .menu-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .menu-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -7px);
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 400px;
+                height: 100vh;
+                background-color: var(--white);
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 6rem 2rem 2rem;
+                box-shadow: var(--shadow-xl);
+                transition: right 0.4s ease;
+                z-index: 999;
+            }
+            
+            .nav-menu.active {
+                right: 0;
+            }
+            
+            .nav-menu li {
+                width: 100%;
+            }
+            
+            .nav-menu li a {
+                display: block;
+                padding: 1rem 0;
+                font-size: 1.25rem;
+                border-bottom: 1px solid var(--gray-200);
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.125rem;
+            }
+            
+            .hero-buttons, .cta-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .btn {
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .services-grid, .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .floating-buttons {
+                bottom: 1.5rem;
+                right: 1.5rem;
+            }
+            
+            .floating-button {
+                width: 3.25rem;
+                height: 3.25rem;
+                font-size: 1.25rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .section {
+                padding: 3rem 0;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            .hero {
+                padding: 8rem 0 4rem;
+                margin-top: 4rem;
+            }
+            
+            .logo-text {
+                font-size: 1.5rem;
+            }
+            
+            .floating-buttons {
+                bottom: 1rem;
+                right: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="images/alyatesisatlogo.png" alt="Alya Tesisat Logo" class="logo">
+                <div class="logo-text">Alya <span>Tesisat</span></div>
+            </div>
+            
+            <button class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#services">Hizmetlerimiz</a></li>
+                    <li><a href="#area">Hizmet Bölgemiz</a></li>
+                    <li><a href="#articles">Makaleler</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Profesyonel Tesisat & Elektrik Hizmetleri</h1>
+            <p>Esenyurt, Avcılar, Beylikdüzü ve çevresinde 10+ yıllık deneyimle acil tesisat, tıkanıklık açma, petek temizleme ve elektrik sorunlarınız için 7/24 hizmetinizdeyiz.</p>
+            
+            <div class="hero-buttons">
+                <a href="tel:05322472159" class="btn btn-primary">
+                    <i class="fas fa-phone-alt"></i> Hemen Ara: 0532 247 21 59
+                </a>
+                <a href="https://wa.me/905322472159?text=Merhaba,%20Alya%20Tesisat%20hizmeti%20almak%20istiyorum." target="_blank" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp'tan Yaz
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container stats-container">
+            <div class="stat-card">
+                <div class="stat-number">10+</div>
+                <div class="stat-text">Yıllık Deneyim</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">7/24</div>
+                <div class="stat-text">Acil Servis</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">1000+</div>
+                <div class="stat-text">Memnun Müşteri</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">30dk</div>
+                <div class="stat-text">Ort. Müdahale Süresi</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hizmetlerimiz</h2>
+                <p>Profesyonel ekibimizle sunduğumuz birinci sınıf hizmetler</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/alyatesisat.jpg" alt="Tesisat Hizmetleri">
+                    </div>
+                    <div class="service-content">
+                        <h3>Tesisat Hizmetleri</h3>
+                        <p>Su tesisatı, tıkanıklık açma, kombi ve doğalgaz tesisatı, musluk tamiri gibi tüm tesisat ihtiyaçlarınız için profesyonel çözümler sunuyoruz.</p>
+                        
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Lavabo, tuvalet tıkanıklığı açma</li>
+                            <li><i class="fas fa-check-circle"></i> Su kaçağı tespiti ve tamiri</li>
+                            <li><i class="fas fa-check-circle"></i> Musluk ve batarya değişimi</li>
+                            <li><i class="fas fa-check-circle"></i> Kombi tesisatı ve bakımı</li>
+                        </ul>
+                        
+                        <a href="tel:05322472159" class="btn btn-primary service-button">
+                            <i class="fas fa-phone-alt"></i> Hemen Ara
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/alyaelektrik.jpg" alt="Elektrik Hizmetleri">
+                    </div>
+                    <div class="service-content">
+                        <h3>Elektrik Hizmetleri</h3>
+                        <p>Aydınlatma tesisatı, priz ve anahtar montajı, elektrik panosu bakımı, arıza tespiti ve onarımı gibi tüm elektrik işlerinizde yanınızdayız.</p>
+                        
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Elektrik arıza tespiti</li>
+                            <li><i class="fas fa-check-circle"></i> Priz ve anahtar montajı</li>
+                            <li><i class="fas fa-check-circle"></i> Aydınlatma tesisatı</li>
+                            <li><i class="fas fa-check-circle"></i> Elektrik panosu bakımı</li>
+                        </ul>
+                        
+                        <a href="tel:05322472159" class="btn btn-primary service-button">
+                            <i class="fas fa-phone-alt"></i> Hemen Ara
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/alyapetek2.webp" alt="Petek Temizleme">
+                    </div>
+                    <div class="service-content">
+                        <h3>Petek Temizleme</h3>
+                        <p>Kış aylarında verimli ısınma için petek temizliği şarttır. Uzman ekibimizle petek temizleme ve bakım hizmeti sunuyoruz.</p>
+                        
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Petek temizleme ve bakımı</li>
+                            <li><i class="fas fa-check-circle"></i> Kombi ve petek bakımı</li>
+                            <li><i class="fas fa-check-circle"></i> Isıtma sistemleri onarımı</li>
+                            <li><i class="fas fa-check-circle"></i> Termostatik vana montajı</li>
+                        </ul>
+                        
+                        <a href="tel:05322472159" class="btn btn-primary service-button">
+                            <i class="fas fa-phone-alt"></i> Hemen Ara
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area Section -->
+    <section class="service-area section" id="area">
+        <div class="container">
+            <div class="area-container">
+                <div class="area-content">
+                    <h2>Hizmet Bölgemiz</h2>
+                    <p>Aşağıdaki bölgelerde acil ve profesyonel hizmet veriyoruz. 7/24 acil servisimizle en kısa sürede müdahale ediyoruz.</p>
+                    
+                    <div class="area-list">
+                        <div class="area-item highlight">Esenyurt</div>
+                        <div class="area-item highlight">Avcılar</div>
+                        <div class="area-item highlight">Beylikdüzü</div>
+                        <div class="area-item">Büyükçekmece</div>
+                        <div class="area-item">Küçükçekmece</div>
+                        <div class="area-item">Esenler</div>
+                        <div class="area-item">Bağcılar</div>
+                        <div class="area-item">Başakşehir</div>
+                    </div>
+                </div>
+                
+                <div class="area-map">
+                    <h3>Hizmet Bölgemiz Haritası</h3>
+                    <p style="margin-bottom: 1.5rem;">Aşağıdaki haritada hizmet verdiğimiz bölgeleri görebilirsiniz:</p>
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt" style="font-size: 4rem; color: var(--primary-blue); margin-right: 1rem;"></i>
+                        <div>
+                            <div>Esenyurt, Avcılar, Beylikdüzü</div>
+                            <div style="font-size: 0.875rem; margin-top: 0.5rem;">ve çevre ilçeler</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles section" id="articles">
+        <div class="container">
+            <div class="section-title">
+                <h2>Faydalı Makaleler</h2>
+                <p>Tesisat ve ev bakımı hakkında bilmeniz gerekenler</p>
+            </div>
+            
+            <div class="articles-grid">
+                <div class="article-card">
+                    <div class="article-image">
+                        <i class="fas fa-tint" style="color: var(--primary-blue);"></i>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> 15 Ekim 2023</span>
+                            <span><i class="far fa-clock"></i> 5 dk okuma</span>
+                        </div>
+                        <h3>Tıkanıklık Açma Yöntemleri ve Önlemler</h3>
+                        <p>Evlerde sıkça karşılaşılan lavabo, tuvalet ve banyo tıkanıklıklarını açmak için pratik çözümler ve tıkanıklığı önleme yöntemleri.</p>
+                        <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <div class="article-image">
+                        <i class="fas fa-fire" style="color: var(--primary-blue);"></i>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> 10 Ekim 2023</span>
+                            <span><i class="far fa-clock"></i> 4 dk okuma</span>
+                        </div>
+                        <h3>Kışa Hazırlık: Petek Temizliği Neden Önemli?</h3>
+                        <p>Petek temizliği nasıl yapılır? Petekler neden temizlenmeli? Verimli ısınma için petek bakımı hakkında bilinmesi gerekenler.</p>
+                        <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="article-card">
+                    <div class="article-image">
+                        <i class="fas fa-bolt" style="color: var(--primary-blue);"></i>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> 5 Ekim 2023</span>
+                            <span><i class="far fa-clock"></i> 6 dk okuma</span>
+                        </div>
+                        <h3>Elektrik Tesisatında Dikkat Edilmesi Gerekenler</h3>
+                        <p>Ev elektrik tesisatı güvenliği, enerji tasarrufu için ipuçları ve elektrik arızalarında yapılması gerekenler hakkında kapsamlı rehber.</p>
+                        <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Acil Tesisat Probleminiz Mi Var?</h2>
+            <p>7/24 acil servis hizmetimizle en kısa sürede müdahale ediyoruz. Hemen bizi arayın!</p>
+            
+            <div class="cta-buttons">
+                <a href="tel:05322472159" class="btn btn-primary">
+                    <i class="fas fa-phone-alt"></i> Hemen Ara: 0532 247 21 59
+                </a>
+                <a href="https://wa.me/905322472159?text=Merhaba,%20Alya%20Tesisat%20hizmeti%20almak%20istiyorum." target="_blank" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp'tan Yaz
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">Alya Tesisat</div>
+                    <p>10+ yıllık deneyimimizle Esenyurt, Avcılar, Beylikdüzü ve çevresinde tesisat, elektrik ve petek temizleme hizmetleri sunmaktayız.</p>
+                    
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:05322472159" style="color: var(--gray-300); text-decoration: none;">0532 247 21 59</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Esenyurt, Avcılar, Beylikdüzü ve Çevresi</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Hızlı Bağlantılar</h3>
+                    <ul>
+                        <li><a href="#home">Ana Sayfa</a></li>
+                        <li><a href="#services">Hizmetlerimiz</a></li>
+                        <li><a href="#area">Hizmet Bölgemiz</a></li>
+                        <li><a href="#articles">Makaleler</a></li>
+                        <li><a href="#contact">İletişim</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h3>Hizmetlerimiz</h3>
+                    <ul>
+                        <li><a href="#services">Tesisat Hizmetleri</a></li>
+                        <li><a href="#services">Elektrik Hizmetleri</a></li>
+                        <li><a href="#services">Petek Temizleme</a></li>
+                        <li><a href="#services">Tıkanıklık Açma</a></li>
+                        <li><a href="#services">Kombi Bakımı</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Alya Tesisat. Tüm hakları saklıdır. | <a href="tel:05322472159" style="color: var(--gray-400);">0532 247 21 59</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/905322472159?text=Merhaba,%20Alya%20Tesisat%20hizmeti%20almak%20istiyorum." target="_blank" class="floating-button whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:05322472159" class="floating-button phone">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+        
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu li a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+        
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if(window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.boxShadow = '0 1px 3px rgba(0,0,0,0.12)';
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+        
+        // Animate stats on scroll
+        const animateStats = () => {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            statNumbers.forEach(stat => {
+                const value = parseInt(stat.textContent);
+                const duration = 2000; // 2 seconds
+                const step = Math.ceil(value / (duration / 16)); // 60fps
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += step;
+                    if (current >= value) {
+                        current = value;
+                        clearInterval(timer);
+                    }
+                    stat.textContent = current + (stat.textContent.includes('+') ? '+' : '');
+                }, 16);
+            });
+        };
+        
+        // Trigger stats animation when in viewport
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        const statsSection = document.querySelector('.stats');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+    </script>
+</body>
+</html>
