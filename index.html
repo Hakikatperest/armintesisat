@@ -880,6 +880,51 @@
                 font-size: 2.5rem;
             }
         }
+        .premium-ad-box {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.premium-ad-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.premium-ad-content {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    font-weight: 600;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4);
+    transition: all 0.3s ease;
+}
+
+.premium-ad-content i {
+    font-size: 1.25rem;
+}
+
+.premium-ad-content small {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ffb703;
+    color: #111;
+    padding: 4px 8px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.premium-ad-content:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.6);
+}
         
         @media (max-width: 480px) {
             .container {
@@ -1263,7 +1308,20 @@
             <div class="copyright">
                 <p>&copy; 2023 Armin Tesisat. Tüm hakları saklıdır. | <a href="tel:05322472159" style="color: var(--gray-400);">0532 247 21 59</a></p>
             </div>
-             <p><i class="fas fa-ad"></i> <a href="https://www.adsreklamvermek.com" title="Google Reklam Vermek İstiyorum" target="_blank" rel="noopener">Google Reklam Vermek İstiyorum</a></p>
+            <div class="premium-ad-box">
+    <a href="https://www.adsreklamvermek.com" 
+       title="Google Reklam Vermek İstiyorum" 
+       target="_blank" 
+       rel="noopener"
+       class="premium-ad-link">
+       
+       <div class="premium-ad-content">
+           <i class="fas fa-bullhorn"></i>
+           <span>Google Reklam Vermek İstiyorum</span>
+           <small>Sponsorlu</small>
+       </div>
+    </a>
+</div>
         </div>
     </footer>
 
