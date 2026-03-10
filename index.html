@@ -992,6 +992,34 @@
                 font-size: 1rem;
             }
         }
+        /* Hero Section - SPACE FIXED */
+.hero {
+    background: var(--gradient-blue);
+    color: var(--white);
+    padding: 12rem 0 8rem;
+    margin-top: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path d="M500,50L505,55L510,50L515,55L520,50L525,55L530,50L535,55L540,50L545,55L550,50L555,55L560,50L565,55L570,50L575,55L580,50L585,55L590,50L595,55L600,50L605,55L610,50L615,55L620,50L625,55L630,50L635,55L640,50L645,55L650,50L655,55L660,50L665,55L670,50L675,55L680,50L685,55L690,50L695,55L700,50L705,55L710,50L715,55L720,50L725,55L730,50L735,55L740,50L745,55L750,50L755,55L760,50L765,55L770,50L775,55L780,50L785,55L790,50L795,55L800,50L805,55L810,50L815,55L820,50L825,55L830,50L835,55L840,50L845,55L850,50L855,55L860,50L865,55L870,50L875,55L880,50L885,55L890,50L895,55L900,50L905,55L910,50L915,55L920,50L925,55L930,50L935,55L940,50L945,55L950,50L955,55L960,50L965,55L970,50L975,55L980,50L985,55L990,50L995,55L1000,50L1000,100L0,100L0,50Z" fill="rgba(255,255,255,0.1)"/></svg>');
+    background-size: 100% 100px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    pointer-events: none; /* BU SATIRI EKLEYİN - butonların tıklanmasını engelleyen sorunu çözer */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2; /* İçeriğin desenin üzerinde kalmasını sağlar */
+}
     </style>
 </head>
 <body>
