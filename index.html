@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17846613936"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'AW-17846613936');
-    <!-- Event snippet for Sayfa görüntüleme (1) conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-17846613936/ccVCCJjBqukbELDv9r1C',
-      'value': 1.0,
-      'currency': 'TRY'
+
+  // Dönüşüm: telefon ve WhatsApp tıklaması. Etiketler Google Ads'te
+  // "Dönüşümler > Yeni > Web sitesi > Manuel kod" ile alınıp buraya yazılır.
+  var W4_DONUSUM = { tel: '', whatsapp: '' };
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    var tur = href.indexOf('tel:') === 0 ? 'tel' : (/wa\.me|whatsapp/i.test(href) ? 'whatsapp' : '');
+    if (!tur || !W4_DONUSUM[tur]) return;
+    gtag('event', 'conversion', { send_to: 'AW-17846613936/' + W4_DONUSUM[tur] });
   });
 </script>
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armin Tesisat - Tıkanıklık Açma, Petek Temizleme, Elektrikçi Hizmetleri</title>
     <meta name="description" content="Esenyurt, Avcılar, Beylikdüzü ve çevresinde acil tesisat, tıkanıklık açma, petek temizleme ve elektrikçi hizmetleri. 7/24 Hizmet. 0532 247 21 59">
     <meta name="keywords" content="tesisatçı, tıkanıklık açma, petek temizleme, elektrikçi, Esenyurt, Avcılar, Beylikdüzü, acil tesisatçı, su tesisatı, esenyurt tesisatçı">
