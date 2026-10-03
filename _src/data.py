@@ -22,7 +22,8 @@ SITE = {
 # Google Ads (hesap etiketi zaten canlıydı). "tel"/"wa" = dönüşüm snippet'indeki
 # send_to ETİKETİ (AW-…/ sonrasındaki kısım). Boşken tıklama dinleyicisi hiçbir şey göndermez.
 ADS = {
-    "etiket": "AW-17846613936",
+    "etiket": "AW-18029618703",          # dönüşümlerin açıldığı hesap (2026-10-03)
+    "ek":     ["AW-17846613936"],         # önceki etiket, yanında yüklenmeye devam eder
     "tel":    "",
     "wa":     "",
 }

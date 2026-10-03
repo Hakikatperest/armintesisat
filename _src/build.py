@@ -122,7 +122,8 @@ def ads_head():
     ayar = json.dumps({"etiket": a["etiket"], "tel": a["tel"], "wa": a["wa"]})
     return (f'<script async src="https://www.googletagmanager.com/gtag/js?id={a["etiket"]}"></script>\n'
             "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
-            f"gtag('js',new Date());gtag('config','{a['etiket']}');window.W4_ADS={ayar};</script>\n")
+            "gtag('js',new Date());" + "".join(f"gtag('config','{k}');" for k in [a["etiket"], *a.get("ek", [])])
+            + f"window.W4_ADS={ayar};</script>\n")
 
 def head(baslik, aciklama, yol, sema=None, robots="index,follow"):
     kanonik = ALAN + "/" + yol
