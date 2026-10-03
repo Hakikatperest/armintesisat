@@ -24,8 +24,8 @@ SITE = {
 ADS = {
     "etiket": "AW-18029618703",          # dönüşümlerin açıldığı hesap (2026-10-03)
     "ek":     ["AW-17846613936"],         # önceki etiket, yanında yüklenmeye devam eder
-    "tel":    "",
-    "wa":     "",
+    "tel":    "SRYwCL_7048dEI_MmJVD",   # Armin – Telefon tıklaması
+    "wa":     "QnuQCLz7048dEI_MmJVD",   # Armin – WhatsApp tıklaması
 }
 
 # ✅ ONAYLI — kullanıcı 2026-10-03'te seçti.
