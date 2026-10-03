@@ -165,8 +165,6 @@ p{margin:0 0 1em}
 .alt-tel{display:flex;align-items:center;gap:8px;margin:0 0 6px}
 .alt-son{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.1);margin-top:32px;padding-top:18px;padding-bottom:10px;font-size:.9rem}
 .alt-son p{margin:0}
-.sponsor{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 14px}
-.sponsor small{opacity:.6;font-size:.75rem}
 
 /* Web4Medya imzası — bağlantı yalnız marka adını sarar */
 .w4{display:flex;justify-content:center;padding:14px 16px 22px;position:relative}

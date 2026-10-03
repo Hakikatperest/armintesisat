@@ -217,7 +217,6 @@ def alt():
  </div>
  <div class="kap alt-son">
   <p>© {S['kurulus']}–2026 {e(S['marka'])} · <a href="{ic('gizlilik-politikasi/')}">Gizlilik Politikası</a> · <a href="{ic('iletisim/')}">İletişim</a></p>
-  <a class="sponsor" href="https://www.adsreklamvermek.com" target="_blank" rel="sponsored noopener">Google Reklam Vermek İstiyorum <small>Sponsorlu</small></a>
  </div>
  {w4_imza()}
 </footer>
